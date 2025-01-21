@@ -17,12 +17,17 @@ public class WebMvcApplication {
         @ResponseBody
         @GetMapping("/hello")
         public String hello() {
-            return "Hello, World!";
+            return "Hello, World!!!";
         }
 
         @GetMapping("/hello2")
         public String hello2() {
-            return "hello";
+            return "th/hello";
+        }
+
+        @GetMapping("/hello3")
+        public String hello3() {
+            return "/hello";
         }
     }
 }

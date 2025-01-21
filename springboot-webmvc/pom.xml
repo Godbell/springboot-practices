@@ -13,6 +13,7 @@
     <version>0.0.1-SNAPSHOT</version>
     <name>springboot-webmvc</name>
     <description>springboot-webmvc</description>
+    <packaging>war</packaging>
     <url/>
     <licenses>
         <license/>
@@ -45,9 +46,28 @@
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-thymeleaf</artifactId>
         </dependency>
-    </dependencies>
 
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-devtools</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>jakarta.servlet.jsp.jstl</groupId>
+            <artifactId>jakarta.servlet.jsp.jstl-api</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.glassfish.web</groupId>
+            <artifactId>jakarta.servlet.jsp.jstl</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.tomcat.embed</groupId>
+            <artifactId>tomcat-embed-jasper</artifactId>
+            <scope>provided</scope>
+        </dependency>
+    </dependencies>
     <build>
+        <finalName>springboot-webmvc</finalName>
         <plugins>
             <plugin>
                 <groupId>org.springframework.boot</groupId>
